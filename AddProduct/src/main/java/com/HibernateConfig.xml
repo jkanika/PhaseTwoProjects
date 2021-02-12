@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE hibernate-configuration PUBLIC
+        "-//Hibernate/Hibernate Configuration DTD//EN"
+        "http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+        
+        <hibernate-configuration>
+        	
+        	<session-factory>
+        	
+        		<!--  JDBC database connection setting go here  -->
+        		<property name="connection.driver_class">com.mysql.cj.jdbc.Driver</property>
+        		<property name ="connection.url">jdbc:mysql://localhost:3306/person</property>
+ 				<property name ="connection.username">root</property>
+ 				<property name ="connection.password"></property>       	
+        	
+        		<!-- JDBC connection pool settings -->
+        		<property name="connection.pool_size">1</property>
+        		
+        		<!-- The SQL dialect to use -->
+        		<property name="dialect">org.hibernate.dialect.MySQL5Dialect</property>
+        		
+        		<!-- Print the SQL queries on console -->
+        		<property name ="show_sql">true</property>
+        		
+        		<!-- Sets the session context -->
+        		<property name="current_session_context_class">thread</property>
+        		
+        		<!-- Update the database schema -->
+				<property name="hbm2ddl.auto">update</property>  
+        		
+        	</session-factory>
+        </hibernate-configuration>
