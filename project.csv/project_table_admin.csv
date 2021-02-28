@@ -1,0 +1,3 @@
+"admin_id","admin_fname","admin_lname","admin_email","admin_pass","admin_role"
+"1","Kanika","Jain","kanika@email.com","@admin123","Admin"
+"2","Trial","Fake","try@email.com","trypass","Admin"
